@@ -1,3 +1,3 @@
-# Surely, You Jest!
+![Surely, You Jest!](./logo.png)
 
 TODO fill out README

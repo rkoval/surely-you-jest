@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <h1
+      className="App-title"
+    >
+      Surely, You Jest!
+    </h1>
+    <img
+      src="jest.png"
+      style={
+        Object {
+          "height": "80px",
+          "width": "80px",
+        }
+      }
+    />
+  </header>
+  <p
+    className="App-intro"
+  >
+    To get started, edit 
+    <code>
+      src/App.js
+    </code>
+     and save to reload.
+  </p>
+</div>
+`;
