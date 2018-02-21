@@ -1,3 +1,4 @@
+// Full API: https://facebook.github.io/jest/docs/en/configuration.html
 module.exports = {
   collectCoverageFrom: ['src/**/*.{js,jsx,mjs}'],
   setupFiles: ['<rootDir>/config/polyfills.js'],
