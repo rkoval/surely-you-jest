@@ -7,8 +7,9 @@ cd barebones
 # execute basic command
 jest
 
-# show off notifications
+# show off API
 jest --notify
+jest --help
 
 cd ../matchers
 # just demo of matchers
@@ -17,7 +18,7 @@ cd ../matchers
 # you become reliant on everyone manually running them, which is problematic because
 # we are human.
 
-jest
+jest --watch
 
 cd ../react-app
 
@@ -28,3 +29,12 @@ cd ../react-app
 #
 # otherwise, everything was pretty much already set up from create-react-app
 
+jest App
+jest --coverage App
+
+cd ../puppeteer
+
+# talk about puppeteer
+# - mention selenium
+# - run without headless mode and demonstrate button clicks
+jest

@@ -1,0 +1,3 @@
+[submodule "puppeteer"]
+	path = puppeteer
+	url = git@github.com:xfumihiro/jest-puppeteer-example.git
