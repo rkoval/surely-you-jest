@@ -25,11 +25,7 @@ exports[`renders without crashing 1`] = `
   <p
     className="App-intro"
   >
-    To get started, edit 
-    <code>
-      src/App.js
-    </code>
-     and save to reload.
+    A VERY SERIOUS TALK ON AUTOMATED TESTING (using Facebook's Jest)
   </p>
 </div>
 `;

@@ -11,7 +11,7 @@ class App extends Component {
           <img src={logo} style={{ width: '80px', height: '80px' }} />
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          A VERY SERIOUS TALK ON AUTOMATED TESTING (using Facebook&apos;s Jest)
         </p>
       </div>
     )

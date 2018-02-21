@@ -1,0 +1,14 @@
+{
+  "name": "surely-you-jest-barebones",
+  "version": "1.0.0",
+  "description": "Barebones repo showing off minimal setup",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ryan Koval <ryan@ryankoval.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^22.4.0"
+  }
+}
