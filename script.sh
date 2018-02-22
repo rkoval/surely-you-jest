@@ -18,7 +18,8 @@ cd ../matchers
 # you become reliant on everyone manually running them, which is problematic because
 # we are human.
 
-jest --watch
+jest --watch matchers
+jest mocks
 
 cd ../react-app
 
@@ -31,6 +32,7 @@ cd ../react-app
 
 jest App
 jest --coverage App
+npm start
 
 cd ../puppeteer
 

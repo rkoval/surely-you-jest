@@ -25,10 +25,22 @@ test('equality', () => {
 
 test('arrays', () => {
   expect([1, 2, 3]).toContain(2)
+  expect('hello').toContain('ll')
 
   const array = [{ hello: true }, { whoa: 'dude' }]
   expect(array).toContainEqual({ whoa: 'dude' })
   expect(array).toHaveLength(2)
+})
+
+test('class', () => {
+  class Hello {}
+  const hello = new Hello()
+  expect(hello).toBeInstanceOf(Hello)
+})
+
+test('regex', () => {
+  const str = '___foobar___'
+  expect(str).toMatch(/fo+bar!?/)
 })
 
 // compare with sinon
@@ -53,17 +65,6 @@ test('jest.fn', () => {
   expect(paramsFunc2).toHaveBeenLastCalledWith('goodbye')
 })
 
-test('class', () => {
-  class Hello {}
-  const hello = new Hello()
-  expect(hello).toBeInstanceOf(Hello)
-})
-
-test('regex', () => {
-  const str = '___foobar___'
-  expect(str).toMatch(/fo+bar!?/)
-})
-
 test('errors', () => {
   const error = () => {
     throw new Error('oh noes')
@@ -75,13 +76,14 @@ test('errors', () => {
 })
 
 test('fuzzy', () => {
-  expect(0.2 + 0.1).toBeCloseTo(0.3)
-
   const rand = Math.random()
   expect(rand).toBeGreaterThan(0)
   expect(rand).toBeGreaterThanOrEqual(0)
   expect(rand).toBeLessThan(1)
   expect(rand).toBeLessThanOrEqual(0.999999999999999)
+
+  // oh noes, floating point math
+  expect(0.2 + 0.1).toBeCloseTo(0.3)
 })
 
 test('object', () => {
@@ -103,9 +105,4 @@ test('object', () => {
     e: 'exact match',
   }
   expect(actual).toMatchObject(expected)
-})
-
-test('async', async () => {
-  const result = await Promise.resolve('resolved')
-  expect(result).toEqual('resolved')
 })
